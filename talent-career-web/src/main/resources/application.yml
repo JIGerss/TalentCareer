@@ -1,0 +1,23 @@
+server:
+  port: 2333
+
+career:
+  user:
+    ak:
+    sk:
+  pool_id:
+  model_url:
+spring:
+  datasource: # 配置数据库、数据源
+    driverClassName: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+logging:
+  file:
+    name: server.log
+mybatis-plus:
+  global-config:
+    banner: false
+    db-config:
+      logic-delete-value: 0
+      logic-not-delete-value: 1
+      logic-delete-field: exist
